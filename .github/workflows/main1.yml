@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-kernel:
+  - name: Android Kernel Build Action
+    uses: dabao1955/kernel_build_action@v1.7.0
+    steps:
+      - name: Build
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/LineageOS/android_kernel_xiaomi_msm8998
+          kernel-branch: lineage-21
+          config: chiron_defconfig
+          arch: arm64
+          aosp-gcc: true
+          aosp-clang: true
+          android-version: 14
+          lxc: true
+          lxc-patch: true
+          nethunter: true
+          nethunter-patch: true
+          kvm: true
+          release: true
