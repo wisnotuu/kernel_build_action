@@ -17,10 +17,12 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          android-version: 9
+          android-version: 7.1
           lxc: true
           lxc-patch: true
           nethunter: true
           nethunter-patch: true
           kvm: true
           release: true
+          access-token: ghp_test
+          bootimg-url: https://github.com/wisnotuu/LXC_KernelSU_Action/blob/main/boot/boot.img
