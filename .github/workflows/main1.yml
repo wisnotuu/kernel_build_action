@@ -17,7 +17,7 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          android-version: 14
+          android-version: 9
           lxc: true
           lxc-patch: true
           nethunter: true
